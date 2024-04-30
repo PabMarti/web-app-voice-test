@@ -52,6 +52,7 @@ function contra(transcript, nipValidado, nipCorrecto){
            procesaOrden();
        } else {
            resultDiv.innerHTML = '<p>NIP incorrecto.</p>';
+           recognition.start();
        }
     }
     };
@@ -167,7 +168,6 @@ function procesarOrden(transcript) {
         default:
           resultDiv.innerHTML = '<p>Comando no reconocido.</p>';
       }
-      
       
 
     // Continuar escuchando después de procesar una orden
