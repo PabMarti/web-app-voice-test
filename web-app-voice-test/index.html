@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Órdenes por Voz con JS</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Asistente virtual Rita</a>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="text-center mb-4">Identificador de Órdenes por Voz</h1>
+                        <div id="result" class="text-center"></div>
+                    
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <img src="./assets/microfono.png" alt="" width="35%" height="35%">
+                                    </th>
+                                    <td id="usuario">
+                                        <div class="mt-4">
+                                            <h3>Ingresa tu usuario</h3>
+                                        </div>
+                                    </td>
+                                    <td id="nip" style="display: none;">
+                                        <div class="mt-4">
+                                            <h3>Ingresa tu NIP</h3>
+                                        </div>
+                                    </td>
+                                    <td id="indicaciones" style="display: none;">
+                                        <div class="mt-4">
+                                            <h3>Órdenes Disponibles:</h3>
+                                            <ul class="list-unstyled">
+                                                <li>-> Rita (Iniciar cada orden con este nombre)</li>
+                                                <li>-> Enciende/apaga la luz de la recámara</li>
+                                                <li>-> Enciende/apaga la luz de la sala</li>
+                                                <li>-> Enciende/apaga las luces del jardín</li>
+                                                <li>-> Enciende/apaga el ventilador</li>
+                                                <li>-> Abre/cierra las cortinas</li>
+                                                <li>-> Activa/desactiva la alarma de la casa</li>
+                                                <li>-> Enciende/apaga las cámaras de seguridad</li>                                        
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+        <div class="container">
+            <span class="text-muted">Todos los derechos reservados &copy; 2024</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
